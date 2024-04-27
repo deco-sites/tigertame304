@@ -13,7 +13,10 @@ export interface Props {
     FAPERJ?: ImageWidget;
   };
   indexada?: string;
-  logoCC?: ImageWidget;
+  CC?: {
+    Logo?: ImageWidget;
+    Texto?: string;
+  };
 }
 
 export default function Footer({
@@ -29,7 +32,10 @@ export default function Footer({
   },
   //copyright = "© 2024 deco.cx. All rights reserved.",
   indexada = "CLASE (Diretório/Directory) DOAJ (Diretório/Directory) EBSCOHOST Latinde (Catálogo/Catalog) ProQuest Portal de Periódicos CAPES (Catálogo/Catalog) SciELO Scopus SEER/Ibict Sumários.org (Diretório/Directory)",
-  logoCC = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+  CC = {
+    Logo: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",,
+    Texto: "Todo o conteúdo deste periódico, exceto onde está identificado, está licenciado sob uma Creative Commons License",
+  },
 
 }: Props) {
   return (
@@ -70,13 +76,24 @@ export default function Footer({
             </div>
           </div>
           <div class="flex flex-col items-center justify-center w-1/5">
-            <p>Text for Column 3</p>
+            <div class="flex justify-between items-center space-x-6">
+              <div class="text-pink-500 text-right">
+                <p>A revista está indexada em</p>
+              </div>
+              <div>
+                <p>{indexada}</p>
+              </div>
+            </div>
           </div>
           <div class="flex flex-col items-center justify-center w-1/5">
-            <p>Text for Column 4</p>
+            <Image
+              src={CC.Logo || ""}
+              width={68}
+              alt="Logo CC"
+            />          
           </div>
-          <div class="flex flex-col items-center justify-center w-1/5">
-            <p>Text for Column 5</p>
+          <div class="flex flex-col items-center justify-center w-1/5 text-right">
+            <p>{CC.Texto}</p>
           </div>
         </div>
       </div>
