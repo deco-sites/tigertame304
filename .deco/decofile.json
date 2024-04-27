@@ -11,7 +11,11 @@
     "links": [],
     "bottomLinks": [],
     "social": [],
-    "subscribe": {}
+    "subscribe": {
+      "title": "teste teste"
+    },
+    "madeWith": {},
+    "logo": {}
   },
   "Groovy Vibes": {
     "__resolveType": "site/sections/Theme/Theme.tsx",
@@ -114,6 +118,21 @@
         }
       ]
     }
+  },
+  "PPGSA": {
+    "__resolveType": "site/sections/Theme/Theme.tsx",
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "2rem",
+      "--btn-focus-scale": "0.9",
+      "--animation-btn": "0.25s"
+    },
+    "mainColors": {
+      "base-100": "#231F20",
+      "primary": "#E5E5E5",
+      "secondary": "#BF31A0"
+    },
+    "font": {}
   },
   "Preview /sections/BlogPost.tsx": {
     "__resolveType": "site/sections/BlogPost.tsx"
@@ -545,25 +564,6 @@
         "__resolveType": "Header"
       },
       {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p><img src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8367/18f71063-10b8-47b9-a99c-3d691186ce45\">Click here to tweak this text however you want.</p>",
-        "description": "This text is entirely editable, tailor it freely."
-      },
-      {
-        "__resolveType": "site/sections/MainPost.tsx",
-        "post": {
-          "__resolveType": "blog/loaders/BlogPostItem.ts",
-          "slug": "why-we-web"
-        }
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx",
-        "posts": {
-          "__resolveType": "blog/loaders/BlogpostList.ts",
-          "count": 6
-        }
-      },
-      {
         "__resolveType": "Footer"
       }
     ],
@@ -601,20 +601,5 @@
     "theme": {
       "__resolveType": "PPGSA"
     }
-  },
-  "PPGSA": {
-    "__resolveType": "site/sections/Theme/Theme.tsx",
-    "buttonStyle": {
-      "--border-btn": "1px",
-      "--rounded-btn": "2rem",
-      "--btn-focus-scale": "0.9",
-      "--animation-btn": "0.25s"
-    },
-    "mainColors": {
-      "base-100": "#231F20",
-      "primary": "#E5E5E5",
-      "secondary": "#BF31A0"
-    },
-    "font": {}
   }
 }
