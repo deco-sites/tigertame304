@@ -1,7 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
-type Type = "dark" | "light";
 
 export interface CTA {
   id?: string;
@@ -11,10 +10,6 @@ export interface CTA {
 }
 
 export interface Nav {
-  logo?: {
-    src?: ImageWidget;
-    alt?: string;
-  };
   navigation?: {
     links: {
       label?: string;
@@ -24,14 +19,10 @@ export interface Nav {
   };
 }
 
-export const ColorType: Record<Type, string> = {
-  "dark": "base-content",
-  "light": "base-100",
-};
 
 export const StyleType: Record<"background" | "color", string> = {
-  "background": "bg-",
-  "color": "text-",
+  "background": "bg-#020617",
+  "color": "text-#f8fafc",
 };
 
 const generateLineStyles = (position: string) => `
@@ -47,31 +38,24 @@ const lineStyles = [
 ];
 
 export default function Haader({
-  logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
-    alt: "Logo",
-  },
   navigation = {
     links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
+      { label: "a revista", url: "/" },
+      { label: "notícias", url: "/" },
+      { label: "corpo editorial", url: "/" },
+      { label: "instruções aos autores", url: "/" },
+      { label: "submissões", url: "/" },
+      { label: "contato", url: "/contato" },
     ],
     buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
+      { id: "change-me-1", href: "/", text: "en", outline: false },
+      { id: "change-me-1", href: "/", text: "pt", outline: true },
     ],
   },
 }: Nav) {
   return (
-    <nav class="container mx-auto lg:px-0 px-4">
+    <nav class="container mx-auto lg:px-0 px-4 bg-[#030712]">
       <div class="flex gap-8 items-center justify-between py-4">
-        <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
-        </a>
-
         <label
           class="cursor-pointer lg:hidden pt-6 relative z-40"
           for="menu-mobile"
@@ -120,7 +104,7 @@ export default function Haader({
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
+                  class="link text-white no-underline hover:underline p-4"
                 >
                   {link.label}
                 </a>

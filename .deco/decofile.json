@@ -549,5 +549,24 @@
     "theme": {
       "__resolveType": "Neutral"
     }
+  },
+  "Preview /sections/Header.tsx": {
+    "__resolveType": "site/sections/Header.tsx"
+  },
+  "pages-contato-184827": {
+    "name": "contato",
+    "path": "/contato",
+    "sections": [
+      {
+        "__resolveType": "Header"
+      },
+      {
+        "__resolveType": "Faq - default"
+      },
+      {
+        "__resolveType": "Footer"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
