@@ -21,8 +21,8 @@ export interface Nav {
 
 
 export const StyleType: Record<"background" | "color", string> = {
-  "background": "bg-#020617",
-  "color": "text-#f8fafc",
+  "background": "bg-[#020617]",
+  "color": "text-white",
 };
 
 const generateLineStyles = (position: string) => `
@@ -67,8 +67,8 @@ export default function Haader({
           <div class="backdrop-blur-sm bg-black/50 fixed h-full hidden inset-0 peer-checked:block w-full z-40">
             &nbsp;
           </div>
-          <div class="duration-500 fixed h-full overflow-y-auto overscroll-y-none peer-checked:translate-x-0 right-0 top-0 transition translate-x-full w-full z-40">
-            <div class="bg-base-100 flex flex-col float-right gap-8 min-h-full pt-12 px-6 shadow-2xl w-1/2">
+          <div class="duration-500 fixed h-full overflow-y-auto overscroll-y-none peer-checked:translate-x-0 left-0 top-0 transition translate-x-full w-full z-40">
+            <div class="bg-base-100 flex flex-col float-left gap-8 min-h-full pt-12 px-6 shadow-2xl w-1/2">
               <ul class="flex flex-col gap-8">
                 {navigation?.links.map((link) => (
                   <li>
@@ -97,14 +97,14 @@ export default function Haader({
           </div>
         </label>
 
-        <ul class="hidden items-center justify-between lg:flex w-full">
+        <ul class="hidden text-white items-center justify-between lg:flex w-full">
           <ul class="flex">
             {navigation.links.map((link) => (
               <li>
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link text-white no-underline hover:underline p-4"
+                  class="link no-underline hover:underline p-4"
                 >
                   {link.label}
                 </a>

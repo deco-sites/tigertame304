@@ -53,7 +53,15 @@
   "Header": {
     "__resolveType": "site/sections/Header.tsx",
     "navigation": {
-      "links": [],
+      "links": [
+        {
+          "label": "a revista"
+        },
+        {
+          "label": "contato",
+          "url": "/contato"
+        }
+      ],
       "buttons": []
     }
   },
@@ -114,6 +122,21 @@
     "bottomLinks": [],
     "social": [],
     "subscribe": {}
+  },
+  "Preview /sections/Header.tsx": {
+    "__resolveType": "site/sections/Header.tsx",
+    "navigation": {
+      "links": [
+        {
+          "label": "a revista"
+        },
+        {
+          "label": "contato",
+          "url": "/contato"
+        }
+      ],
+      "buttons": []
+    }
   },
   "Preview /sections/Hero.tsx": {
     "__resolveType": "site/sections/Hero.tsx",
@@ -485,6 +508,22 @@
       }
     }
   },
+  "pages-contato-184827": {
+    "name": "contato",
+    "path": "/contato",
+    "sections": [
+      {
+        "__resolveType": "Header"
+      },
+      {
+        "__resolveType": "Faq - default"
+      },
+      {
+        "__resolveType": "Footer"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
   "pages-home-5afd25174424": {
     "name": "Home",
     "path": "/",
@@ -549,24 +588,5 @@
     "theme": {
       "__resolveType": "Neutral"
     }
-  },
-  "Preview /sections/Header.tsx": {
-    "__resolveType": "site/sections/Header.tsx"
-  },
-  "pages-contato-184827": {
-    "name": "contato",
-    "path": "/contato",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
-        "__resolveType": "Faq - default"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
   }
 }
