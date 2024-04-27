@@ -55,7 +55,20 @@
     "navigation": {
       "links": [
         {
-          "label": "a revista"
+          "label": "a revista",
+          "url": "/"
+        },
+        {
+          "label": "notícias"
+        },
+        {
+          "label": "corpo editorial"
+        },
+        {
+          "label": "instruções aos autores"
+        },
+        {
+          "label": "submissões"
         },
         {
           "label": "contato",
@@ -586,7 +599,22 @@
     },
     "firstByteThresholdMS": false,
     "theme": {
-      "__resolveType": "Neutral"
+      "__resolveType": "PPGSA"
     }
+  },
+  "PPGSA": {
+    "__resolveType": "site/sections/Theme/Theme.tsx",
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "2rem",
+      "--btn-focus-scale": "0.9",
+      "--animation-btn": "0.25s"
+    },
+    "mainColors": {
+      "base-100": "#231F20",
+      "primary": "#E5E5E5",
+      "secondary": "#BF31A0"
+    },
+    "font": {}
   }
 }

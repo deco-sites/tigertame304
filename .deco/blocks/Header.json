@@ -1,1 +1,1 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[{"label":"a revista"},{"label":"contato","url":"/contato"}],"buttons":[]}}
+{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[{"label":"a revista","url":"/"},{"label":"notícias"},{"label":"corpo editorial"},{"label":"instruções aos autores"},{"label":"submissões"},{"label":"contato","url":"/contato"}],"buttons":[]}}
